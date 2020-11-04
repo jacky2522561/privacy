@@ -1,108 +1,145 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* svg */
 
-.stroke{
-    stroke-dashoffset: 2000;
-    stroke-dasharray: 2000;
-    animation: circle-draw 10s linear infinite
+.stroke {
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+  animation: circle-draw 10s linear infinite;
 }
 
-
-@keyframes circle-draw{
-    80% {
-        stroke-dashoffset: 0;
-        }
+@keyframes circle-draw {
+  80% {
+    stroke-dashoffset: 0;
+  }
 }
 /* svg end */
 
 /* navbar */
-.header{
-    width: 100%;
-    justify-content: left;
-}
-.nav-title{
-    font-size: 36px;
-    padding: 1em 1em;
-    line-height: 30px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    font-family: 'Itim', cursive;
+.header {
+  width: 100%;
+  justify-content: left;
 }
 
-.nav-text{
-    font-size: 10px;
-    text-transform: uppercase;
-    padding-left: 4px;
-    font-family: 'Itim', cursive;
+.nav-title {
+  /* position: fixed; */
+  font-size: 36px;
+  padding: 1em 1em;
+  line-height: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: 'Itim', cursive;
+  text-decoration: none;
+  color: black;
 }
 
-.nav-tran:hover{
-    color: rgba(211, 171, 59, 0.781);
-    letter-spacing: 0.5px;
+.nav-text {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-left: 4px;
+  font-family: 'Itim', cursive;
 }
 
-.right{
-    float: right !important;
+.nav-tran:hover {
+  color: rgba(211, 171, 59, 0.781);
+  letter-spacing: 0.5px;
+}
+
+.right {
+  float: right !important;
 }
 /* navbar end */
 
 /* main */
-.main .pic{
-    width: 70%;
-}
-.main{
-    width: 100%;
-    display: flex;
+.main {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
 }
 
-.main .intro{
-    width: 30%;
-    margin-top: 200px;
-    margin-left: 0;
+.main .pic {
+  width: 65%;
 }
 
-.main .intro h1{
-    font-size: 40px;
-    letter-spacing: 2.5px;
-    font-family: 'Itim', cursive;
+.main .intro {
+  position: relative;
+  width: 25%;
+  padding-top: 150px;
 }
 
-.main .intro h2{
-    font-size: 35px;
-    letter-spacing: 2.5px;
-    font-family: 'Itim', cursive;
-    padding-top: 3px;
-    padding-left: 20px;
+.main .intro h1 {
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  font-family: 'Itim', cursive;
 }
 
-.main .intro #lovername{
-    padding-left: 40px;
+.main .intro h2 {
+  font-size: 35px;
+  letter-spacing: 2.5px;
+  font-family: 'Itim', cursive;
+  padding-top: 3px;
+  padding-left: 20px;
+}
+
+.main .intro #lovername {
+  padding-left: 40px;
 }
 /* main end*/
 
-@media(max-width: 500px){
-    .main .intro h1{
-       display: none;
-   }
-   .main .intro h2{
-    margin-top: 50px;
-    }
-    .main .intro{
-        margin-top: 80px;
-        margin-left: 0;
-    }
-    .main{
-        display: flex;
-        flex-wrap: wrap;
-    }
+/* fb-ig */
+.fb-ig {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Itim', cursive;
+}
+
+.fb-ig a {
+  text-decoration: none;
+  color: black;
+  margin: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.fb-ig a i {
+  padding-right: 5px;
+}
+
+.fb-ig a:hover {
+  color: rgba(211, 171, 59, 0.781);
+  letter-spacing: 0.5px;
+}
+/* fb-ig end */
+
+/* work */
+.work {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(168, 100, 17);
+  z-index: 1;
+}
+/* work end */
+
+@media (max-width: 700px) {
+  .main .intro {
+    margin-top: 5px;
+  }
+  .main .intro h1 {
+    display: none;
+  }
+  .main .intro h2 {
+    padding-top: 10px;
+  }
+  .main {
+    display: flex;
+  }
 }
