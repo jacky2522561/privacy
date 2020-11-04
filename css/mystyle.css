@@ -74,22 +74,28 @@
 .main .intro {
   position: relative;
   width: 25%;
-  padding-top: 150px;
+  padding-top: 200px;
+  font-family: 'Itim', cursive;
 }
 
 .main .intro h1 {
   font-size: 40px;
   letter-spacing: 2.5px;
-  font-family: 'Itim', cursive;
+  margin-bottom: 5px;
 }
 
-.main .intro h2 {
+.main .intro section {
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+/* .main .intro h2 {
   font-size: 35px;
   letter-spacing: 2.5px;
   font-family: 'Itim', cursive;
   padding-top: 3px;
   padding-left: 20px;
-}
+} */
 
 .main .intro #lovername {
   padding-left: 40px;
@@ -100,9 +106,10 @@
 .fb-ig {
   font-size: 20px;
   width: 100%;
-  text-align: center;
   margin-top: 40px;
   font-family: 'Itim', cursive;
+  display: flex;
+  justify-content: center;
 }
 
 .fb-ig a {
@@ -144,17 +151,75 @@
 
 /* work end */
 
+/* rwd */
+@media(max-width: 850px){
+  .main .intro h1 {
+    font-size: 25px;
+  }
+  .main .intro section {
+    font-size: 18px;
+  }
+  .main .intro {
+    padding-top: 120px;
+  }
+}
+
 @media (max-width: 700px) {
+  .nav-title{
+    font-size: 30px;
+  }
+  .nav-text{
+    font-size: 8px;
+  }
   .main .intro {
     margin-top: 5px;
   }
-  .main .intro h1 {
-    display: none;
-  }
-  .main .intro h2 {
+  /* .main .intro h2 {
     padding-top: 10px;
-  }
+  } */
   .main {
     display: flex;
   }
 }
+
+@media(max-width: 550px){
+  .main .intro {
+    padding-top: 50px;
+  }
+}
+
+@media(max-width: 400px){
+  .nav-title{
+    font-size: 20px;
+  }
+  .main .intro h1 {
+    font-size: 18px;
+  }
+  .main .intro section {
+    font-size: 10px;
+  }
+  .main .intro {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 350px){
+  .nav-title{
+    font-size: 23px;
+  }
+  .main .intro h1 {
+    font-size: 12px;
+  }
+  .main .intro section {
+    font-size: 5px;
+  }
+  .nav-text{
+    display: none;
+  }
+  .fb-ig{
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center;
+  } 
+}
+/* rwd end */
