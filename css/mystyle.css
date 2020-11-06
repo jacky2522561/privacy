@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@
 /* navbar */
 .header {
   width: 100%;
-  justify-content: left;
+  /* justify-content: left; */
 }
 
 .nav-title {
@@ -68,6 +69,8 @@
 }
 
 .main .pic {
+  position: relative;
+  top: 2em;
   width: 65%;
 }
 
@@ -104,6 +107,7 @@
 
 /* fb-ig */
 .fb-ig {
+  padding-top: 1em;
   font-size: 20px;
   width: 100%;
   margin-top: 40px;
@@ -133,10 +137,18 @@
 .work {
   margin-top: 30px;
   width: 100%;
-  height: 755px;
+  height: 4500px;
   background-color: rgb(168, 100, 17);
   /* z-index: 1; */
   /* display: flex; */
+}
+
+.work h3{
+  font-size: 1.5rem;
+}
+
+.work p{
+  font-size: 1.2rem;
 }
 
 .work img {
@@ -153,6 +165,10 @@
 
 /* rwd */
 @media(max-width: 850px){
+  .nav-title{
+    line-height: 0.8em;
+    font-size: 30px;
+  }
   .main .intro h1 {
     font-size: 25px;
   }
@@ -165,9 +181,6 @@
 }
 
 @media (max-width: 700px) {
-  .nav-title{
-    font-size: 30px;
-  }
   .nav-text{
     font-size: 8px;
   }
@@ -186,20 +199,45 @@
   .main .intro {
     padding-top: 50px;
   }
+  .fb-ig{
+    margin-top: 6rem;
+  }
 }
 
 @media(max-width: 400px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .main .pic {
+    width: 100%;
+  }
+  
+  .main .intro {
+    position: relative;
+    left: 50%;
+    width: 100%;
+  }
+  .nav-text{
+    display: none;
+  }
   .nav-title{
-    font-size: 20px;
+    font-size: 25px;
   }
   .main .intro h1 {
     font-size: 18px;
   }
   .main .intro section {
     font-size: 10px;
+    position: absolute;
+    left: 9%;
   }
   .main .intro {
     padding-top: 50px;
+  }
+  .fb-ig{
+    margin-top: 50px;
+    font-size: 14px;
   }
 }
 
@@ -213,10 +251,13 @@
   .main .intro section {
     font-size: 5px;
   }
-  .nav-text{
-    display: none;
-  }
   .fb-ig{
+    font-size: 15px;
+    flex-direction: column;
+    text-align: center;
+  } 
+  .fb-ig div:last-child{
+    padding-top: 0.5em;
     font-size: 15px;
     flex-direction: column;
     text-align: center;
