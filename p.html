@@ -28,7 +28,7 @@
       <!-- header -->
       <div class="header">
           <div class="navbar">
-            <a class="right nav-title nav-tran" href="#"
+            <a class="right nav-title nav-tran" id="to-contact"
               ><p>Contact<br /></p>
               <span class="nav-text">Curious?</span>
             </a>
@@ -207,7 +207,48 @@
         </div>
       </div>
 
-      <div class="footer"></div>
+      <!-- contact -->
+      <div class="footer-contact" id="contact">
+        <div class="contact-title">contact</div>
+
+        <div class="contact-container">
+          <div>
+            <h3><i class="fas fa-envelope-square"></i>e-mail:</h3>
+            <p class="wow fadeInUpBig gmail" data-wow-duration="1s">jacky2522561@gmail.com</p>
+          </div>
+          <div>
+            <h3><i class="fas fa-phone-square"></i>phone:</h3>
+            <p class="wow fadeInUpBig phone" data-wow-duration="1s" data-wow-delay="0.4s">0988-***-252</p>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a class="wow flipInX"
+            href="https://www.facebook.com/profile.php?id=100008816776991"
+            target="_blank"
+            ><i class="fab fa-facebook-square"></i></a
+          >
+          <a class="wow flipInX" data-wow-delay="0.2s" href="https://www.instagram.com/jacky2522561/" target="_blank"
+            ><i class="fab fa-instagram-square"></i></a
+          >
+          <a class="wow flipInX" data-wow-delay="0.4s"
+          href="https://twitter.com/jacky2561"
+          target="_blank"
+          ><i class="fab fa-twitter-square"></i></a
+          >
+          <a class="wow flipInX" data-wow-delay="0.6s"
+          href="https://github.com/jacky2522561"
+          target="_blank"
+          ><i class="fab fa-github-square"></i></a
+          >
+
+          <a class="wow flipInX"data-wow-delay="0.8s" id="to-top"
+          ><i class="fas fa-chevron-circle-up"></i></a
+          >
+        </div>
+
+      </div>
+
     </div>
 
     <!-- jq -->
@@ -217,6 +258,17 @@
     <script src="./js/jquery.scrollme.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <script>
+      $(function(){
+            $('#to-top').click(function(){
+                $('html,body').animate({scrollTop: '0px'},1200)
+            });
+
+            $('#to-contact').click(function(){
+                $('html,body').animate({scrollTop:$('#contact').offset().top},1200)
+            });
+        })
     </script>
   </body>
 </html>
